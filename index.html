@@ -1,9 +1,9 @@
 <!DOCTYPE html>
 <html>
 <head>
-    link to css file
+    <!-- link to css file -->
     <link rel="stylesheet" type="text/css" href="main.css">
-   <  <!-- link to css file -->
+    <link rel="icon" href="./favicon/disc-fill.svg" />
     <script src="https://kit.fontawesome.com/63abf281fd.js" crossorigin="anonymous"></script>
      <title>Music Player</title>
 </head>
@@ -15,97 +15,158 @@
         </div>
         <div class="fav">
 
-            <a href="">Favourites</a>
+            <a href="#">Favourites</a>
         </div>
-        <div>
+        <div class="form">
             <form>
-                <span>
-                    <button type="submit"><!-- <img src="" alt="search"> --><i class="fas fa-search"></i></button>
+          
+                    <button type="submit"><i class="fas fa-search"></i></button>
                     <input placeholder="Search" type="text">
-                </span>
-                <button type="button"><!-- img src="" alt="notif"> --><i class="far fa-bell"></i></button>
-                <button type="button" id="user"><!-- <img src="" alt="user-logo"> --><i class="far fa-user"></i></button>
-            </form>
+           </form>
+           <div class="btn-holder">
+                <button type="button"><i class="far fa-bell"></i></button>
+                <button type="button" id="user"><i class="far fa-user"></i></button>
+           </div>
         </div>
     </header>
     <!-- aside section contains the queue part -->
     <aside class="queue">
+        <section class="aside-heading">
         <h1 class="qheading">Queue</h1>
         <a href="#dropdown" id="defualt">
             Queue ▼
         </a>
         <div class="dropdown" id="dropdown">
-            <a href="#defualt">
-            Queue ▲</a>
-        </a>
-        <ul>
-            <li><a href=" ">Playlist</a></li>
-            <li><a href=" ">Favourite Songs</a></li>
-        </ul>
+            <h3><a href="#defualt">
+            Queue ▲</a></h3>
+                <hr/>
+            <p><a href="/playlist.html">Playlist</a></p>
+             <hr/>
+            <p><a href="#">Favourite Songs</a><p>
+
     </div>
+        </section>
     <ol>
-        <li><img src="songs/watch.jpg"> 
+        <li>
+            <figure>
+            <img src="songs/watch.jpg"> 
+            <figcaption>
             <span class="name">Watch</span>
             <span class="description">Billie Eilish</span>
+            </figcaption>
+            </figure>
 
         </li>
-        <li><img src="songs/bitter.png"> 
+        <li>
+            <figure>
+            <img src="songs/bitter.png"> 
+            <figcaption>
             <span class="name">Bitter</span>
             <span class="description">Fletcher</span>
+            </figcaption>
+            </figure>
 
         </li>
-        <li><img src="songs/watch.jpg"> 
+                <li>
+            <figure>
+            <img src="songs/watch.jpg"> 
+            <figcaption>
             <span class="name">Watch</span>
             <span class="description">Billie Eilish</span>
+            </figcaption>
+            </figure>
 
         </li>
-        <li><img src="songs/bitter.png"> 
+        <li>
+            <figure>
+            <img src="songs/bitter.png"> 
+            <figcaption>
             <span class="name">Bitter</span>
             <span class="description">Fletcher</span>
+            </figcaption>
+            </figure>
 
         </li>
-        <li><img src="songs/watch.jpg"> 
+                <li>
+            <figure>
+            <img src="songs/watch.jpg"> 
+            <figcaption>
             <span class="name">Watch</span>
             <span class="description">Billie Eilish</span>
+            </figcaption>
+            </figure>
 
         </li>
-        <li><img src="songs/bitter.png"> 
+        <li>
+            <figure>
+            <img src="songs/bitter.png"> 
+            <figcaption>
             <span class="name">Bitter</span>
             <span class="description">Fletcher</span>
+            </figcaption>
+            </figure>
 
         </li>
-        <li><img src="songs/watch.jpg"> 
+                <li>
+            <figure>
+            <img src="songs/watch.jpg"> 
+            <figcaption>
             <span class="name">Watch</span>
             <span class="description">Billie Eilish</span>
+            </figcaption>
+            </figure>
 
         </li>
-        <li><img src="songs/bitter.png"> 
+        <li>
+            <figure>
+            <img src="songs/bitter.png"> 
+            <figcaption>
             <span class="name">Bitter</span>
             <span class="description">Fletcher</span>
+            </figcaption>
+            </figure>
 
         </li>
-        <li><img src="songs/watch.jpg"> 
+                <li>
+            <figure>
+            <img src="songs/watch.jpg"> 
+            <figcaption>
             <span class="name">Watch</span>
             <span class="description">Billie Eilish</span>
+            </figcaption>
+            </figure>
 
         </li>
-        <li><img src="songs/bitter.png"> 
+        <li>
+            <figure>
+            <img src="songs/bitter.png"> 
+            <figcaption>
             <span class="name">Bitter</span>
             <span class="description">Fletcher</span>
+            </figcaption>
+            </figure>
 
         </li>
-        <li><img src="songs/watch.jpg"> 
+                <li>
+            <figure>
+            <img src="songs/watch.jpg"> 
+            <figcaption>
             <span class="name">Watch</span>
             <span class="description">Billie Eilish</span>
+            </figcaption>
+            </figure>
 
         </li>
-        <li><img src="songs/bitter.png"> 
+        <li>
+            <figure>
+            <img src="songs/bitter.png"> 
+            <figcaption>
             <span class="name">Bitter</span>
             <span class="description">Fletcher</span>
+            </figcaption>
+            </figure>
 
         </li>
-        
-        
     </ol>
     <!-- volume button -->
     <section class="volume">
@@ -131,120 +192,142 @@
 <!-- Section contains songs -->
 <h2>   Recommended Songs</h2>
 <section class="sec-2 ">
-   <div class="song">
-       
+<figure class="song">
+    <div class="img-container">
     <img src="songs/loner.jpg">
     <span class="hide">
      <a href="#footer"> <i class="fas fa-play"></i> </a>
- </span>
+    </span>
+    </div>
  
- <div class="description">
+ <figcaption class="description">
     <span>
         <a href="#footer" class="name">Loner</a>
     </span>
     <span>By <a href="">Maggie Lindemann</a></span>
     <span>3 min 11 sec</span>
     <span>2020<span>
-    </div>
-</div>
-<div class="song">
+    </figcaption>
+</figure>
+<figure class="song">
+    <div class="img-container">
     <img src="songs/loner.jpg">
     <span class="hide">
      <a href="#footer"> <i class="fas fa-play"></i> </a>
- </span>
- <div class="description">
+    </span>
+    </div>
+ 
+ <figcaption class="description">
     <span>
         <a href="#footer" class="name">Loner</a>
     </span>
     <span>By <a href="">Maggie Lindemann</a></span>
     <span>3 min 11 sec</span>
     <span>2020<span>
-    </div>
-</div>
-<div class="song">
+    </figcaption>
+</figure>
+<figure class="song">
+    <div class="img-container">
     <img src="songs/loner.jpg">
     <span class="hide">
      <a href="#footer"> <i class="fas fa-play"></i> </a>
- </span>
- <div class="description">
+    </span>
+    </div>
+ 
+ <figcaption class="description">
     <span>
         <a href="#footer" class="name">Loner</a>
     </span>
     <span>By <a href="">Maggie Lindemann</a></span>
     <span>3 min 11 sec</span>
     <span>2020<span>
-    </div>
-</div>
-<div class="song">
+    </figcaption>
+</figure>
+<figure class="song">
+    <div class="img-container">
     <img src="songs/loner.jpg">
     <span class="hide">
      <a href="#footer"> <i class="fas fa-play"></i> </a>
- </span>
- <div class="description">
+    </span>
+    </div>
+ 
+ <figcaption class="description">
     <span>
         <a href="#footer" class="name">Loner</a>
     </span>
     <span>By <a href="">Maggie Lindemann</a></span>
     <span>3 min 11 sec</span>
     <span>2020<span>
-    </div>
-</div>
-<div class="song">
+    </figcaption>
+</figure>
+<figure class="song">
+    <div class="img-container">
     <img src="songs/loner.jpg">
     <span class="hide">
      <a href="#footer"> <i class="fas fa-play"></i> </a>
- </span>
- <div class="description">
+    </span>
+    </div>
+ 
+ <figcaption class="description">
     <span>
         <a href="#footer" class="name">Loner</a>
     </span>
     <span>By <a href="">Maggie Lindemann</a></span>
     <span>3 min 11 sec</span>
     <span>2020<span>
-    </div>
-</div>
-<div class="song">
+    </figcaption>
+</figure>
+<figure class="song">
+    <div class="img-container">
     <img src="songs/loner.jpg">
     <span class="hide">
      <a href="#footer"> <i class="fas fa-play"></i> </a>
- </span>
- <div class="description">
+    </span>
+    </div>
+ 
+ <figcaption class="description">
     <span>
         <a href="#footer" class="name">Loner</a>
     </span>
     <span>By <a href="">Maggie Lindemann</a></span>
     <span>3 min 11 sec</span>
     <span>2020<span>
-    </div>
-</div>
-<div class="song">
+    </figcaption>
+</figure>
+<figure class="song">
+    <div class="img-container">
     <img src="songs/loner.jpg">
     <span class="hide">
      <a href="#footer"> <i class="fas fa-play"></i> </a>
- </span>
- <div class="description">
+    </span>
+    </div>
+ 
+ <figcaption class="description">
     <span>
         <a href="#footer" class="name">Loner</a>
     </span>
     <span>By <a href="">Maggie Lindemann</a></span>
     <span>3 min 11 sec</span>
     <span>2020<span>
-    </div>
-</div>
-<div class="song">
+    </figcaption>
+</figure>
+<figure class="song">
+    <div class="img-container">
     <img src="songs/loner.jpg">
     <span class="hide">
-     <a href="#footer"> <i class="fas fa-play"></i></a>
- </span>
- <div class="description">
+     <a href="#footer"> <i class="fas fa-play"></i> </a>
+    </span>
+    </div>
+ 
+ <figcaption class="description">
     <span>
         <a href="#footer" class="name">Loner</a>
     </span>
     <span>By <a href="">Maggie Lindemann</a></span>
     <span>3 min 11 sec</span>
     <span>2020<span>
-    </div>
-</div>
+    </figcaption>
+</figure>
 
 </section>
 <h2>
@@ -336,36 +419,32 @@
 <!-- this the bottom music player -->
 <footer id="footer">
     <section class="faside">
+        <figure>
         <img src="songs/loner.jpg" alt="song-image">
-
+        <figcaption>
         <span>
-            <a href=" " class="name">
+            <a href="" class="name">
                 Loner
             </a>
             <button type="button" class="fav"><i class="far fa-heart"></i></button>  
         </span>
-        <span class="block">
+        <span>
             <a href="">
                 Maggie Lindemann
             </a>
         </span>
-
+        </figcaption>
+        </figure>
     </section>
     <section class="song-hist">
-        <p>
+        <div>
             <b>Previous</b>
             <br/>
             <a href="">
                 song name
             </a>
-        </p>
-        <p class="next">
-            <b>Next</b>
-            <br/>
-            <a href="">song name</a>
-        </p>
+        </div>
 
-    </section>
     <!-- the section that contains buttons and the time bar for the player -->
     <section class="player">
         <div class="button-container">
@@ -388,10 +467,12 @@
             </span>
         </div>
     </section>
-
-
-
-
+            <div class="next">
+            <b>Next</b>
+            <br/>
+            <a href="">song name</a>
+            </div>
+</section>
 </footer>
 </body>
 </html>
